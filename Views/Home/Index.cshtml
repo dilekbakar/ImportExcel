@@ -1,0 +1,20 @@
+﻿@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelper
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form asp-controller="Home" asp-action="Privacy" method="post" enctype="multipart/form-data">
+        <input type="file" name="postedFile" />
+        <input type="submit" value="Import" />
+    </form>
+</body>
+</html>
